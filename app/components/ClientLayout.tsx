@@ -1,7 +1,7 @@
 'use client';
 
-import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+//import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { Globalize } from "./Globalize";
 import Sidebar from "./Sidebar";
 import MobileNav from "./MobileNav";
