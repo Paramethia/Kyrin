@@ -15,7 +15,7 @@ const ParticleSystem = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationFrame = useRef<number>(0);
-  let {colour, color} = useContext(Globalize);
+  const {colour, color} = useContext(Globalize);
 
   useEffect(() => {
 
@@ -100,8 +100,7 @@ const ParticleSystem = () => {
         ctx.fillStyle = "rgba(55, 65, 81, 0.4)"; //"rgba(88, 88, 88, 222)";
         ctx.strokeStyle = color;
         ctx.beginPath();
-        var size: number = 11;
-        ctx.arc(mousePos.x, mousePos.y, size, 0, Math.PI * 2);
+        ctx.arc(mousePos.x, mousePos.y, 11, 0, Math.PI * 2);
         ctx.fill();
         ctx.stroke();
       }

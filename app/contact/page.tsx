@@ -26,8 +26,8 @@ const CONTACT_LINKS = [
 ];
 
 export default function Contact() {
-  let [showCopied, setShowCopied] = useState(false);
-  let [hoveredPlatform, setHoveredPlatform] = useState<string | null>(null);
+  const [showCopied, setShowCopied] = useState(false);
+  const [hoveredPlatform, setHoveredPlatform] = useState<string | null>(null);
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);

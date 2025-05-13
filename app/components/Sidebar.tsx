@@ -1,6 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation";
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { Globalize } from "./Globalize";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function Sidebar() {
     ];
     const activePage = pages.find(page => page.path === pathName);
 
-    let {setColor, setColour} = useContext(Globalize);
+    const {setColor, setColour} = useContext(Globalize);
 
     return (
         <div className="w-48 h-full flex items-center">

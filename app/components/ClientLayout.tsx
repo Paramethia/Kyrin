@@ -11,7 +11,7 @@ import PageTransition from "./PageTransition";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   
-    let currentPage = usePathname();
+    //let currentPage = usePathname();
     const [color, setColor] = useState("rgba(162, 136, 52, 0.5)");
     const [colour, setColour] = useState("rgba(162, 136, 52, 0.5)");
     /*
