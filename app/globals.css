@@ -24,3 +24,37 @@ body {
 .progress-bar {
   animation-play-state: var(--animation-play-state, running);
 }
+
+@media only screen and (max-height: 780px ) {
+  .excon {
+    height: 455px;
+    margin-bottom: 35px;
+    overflow-y: auto;
+    padding: 27px;
+  }
+  .excon::-webkit-scrollbar {
+    width: 4px;
+  }
+  .excon::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+  .excon::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgb(162, 136, 52, 0.5);
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .excon { 
+    max-height: 430px;
+    padding-bottom: 52px;
+  }
+}
+
+@media only screen and (max-width: 435px) { 
+  .tit { margin-top: 27px } 
+}
+
+@media only screen and (max-width: 435px) {
+  .about-kyrin { display: none }
+}

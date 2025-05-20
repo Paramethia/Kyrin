@@ -36,7 +36,7 @@ export default function Home() {
           Experience
         </motion.h3>
 
-        <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1, duration: 0.5 }} className="flex flex-wrap justify-start gap-3 mt-6">
+        <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1, duration: 0.5 }} className="excon flex flex-wrap justify-start gap-3 mt-6">
           {['React', 'Next.js', 'JavaScript', 'TypeScript', 'Vue.js', 'Ruby on Rails'].map((skill, index) => (
             <motion.div key={skill} initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

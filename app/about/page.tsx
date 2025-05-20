@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex justify-center items-center h-full">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="sm:flex sm:justify-center sm:items-center sm:h-full">
       <div className="text-center md:text-start space-y-6 max-w-2xl relative mx-4 md:mx-0">
-        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-4xl font-bold">
+        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="tit about-kyrin text-4xl font-bold">
           About Kyrin
         </motion.h1>
 
-        <motion.p initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.5 }} className="text-xl text-gray-600 dark:text-gray-400">
+        <motion.p initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.5 }} className="about-kyrin text-xl text-gray-600 dark:text-gray-400">
           I'm a self-taught full-stack developer passionate about creating clean, efficient, sometimes also unique, and user-friendly web applications.
         </motion.p>
 

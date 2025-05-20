@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "./components/ClientLayout";
@@ -26,7 +27,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-widdth, initial-scale=1.0" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <Analytics />
           <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
