@@ -14,9 +14,9 @@ const EXPERIENCE = [
   { name: 'React', experience: '5 months', link: 'https://reactjs.org' },
   { name: 'Next.js', experience: 'About a week', link: 'https://nextjs.org' },
   { name: 'JavaScript', experience: '1 year', link: 'https://javascript.com' },
-  { name: 'TypeScript', experience: 'About a week', link: 'https://typescriptlang.com' },
+  { name: 'TypeScript', experience: 'About a week', link: 'https://typescriptlang.org' },
   { name: 'Vue.js', experience: '2 months', link: 'https://vuejs.org' },
-  { name: 'Ruby on Rails', experience: '3 weeks', link: 'https://rubyonrails.org.com' },
+  { name: 'Ruby on Rails', experience: '3 weeks', link: 'https://rubyonrails.org' },
 ]
 
 export default function Home() {
