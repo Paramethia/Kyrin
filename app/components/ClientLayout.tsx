@@ -1,7 +1,7 @@
 'use client';
 
-//import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 import { Globalize } from "./Globalize";
 import Sidebar from "./Sidebar";
 import MobileNav from "./MobileNav";
@@ -11,15 +11,25 @@ import PageTransition from "./PageTransition";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   
-    //let currentPage = usePathname();
+    const currentPage = usePathname();
     const [color, setColor] = useState("rgba(162, 136, 52, 0.5)");
     const [colour, setColour] = useState("rgba(162, 136, 52, 0.5)");
-    /*
-    if (currentPage === "/projects") {
-        setColor("#614051");
-        setColour("rgba(49, 20, 50, 1.8)");
-    }
-    */
+    
+    useEffect(() => { 
+        if (currentPage === "/projects") {
+            setColor("#614051");
+            setColour("rgba(91, 60, 76, 0.7)");
+        } else if (currentPage === "/about") {
+            setColour("rgba(55, 65, 81, 0.4)");
+        } else if (currentPage === "/contact") {
+            setColor("rgba(55, 65, 81, 1.5)");
+            setColour("rgba(55, 65, 81, 1)");
+        } else {
+            setColor("rgba(162, 136, 52, 0.8)");
+            setColour("rgba(162, 136, 52, 0.5)");
+        }
+    }, [currentPage]);
+    
     return (
         <Globalize.Provider value={{ color, setColor, colour, setColour }}>
             <Particles />
