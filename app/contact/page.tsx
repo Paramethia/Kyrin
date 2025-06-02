@@ -6,7 +6,6 @@ const CONTACT_LINKS = [
   {
     platform: 'Email',
     handle: 'kyrinkompi@gmail.com',
-    link:'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRqhsVpwMMCJxbhNPlkgxjwWLVZwdCnvbVGGzjhDWMbqZZBZGmPDJzLtCcFbPnnbXvBfWGB',
     icon: 'M17.187 19.181L24 4.755 0 12.386l9.196 1.963.043 4.896 2.759-2.617-2.147-2.076 7.336 4.63z',
   },
   {
@@ -53,7 +52,7 @@ export default function Contact() {
           {CONTACT_LINKS.map((link) => (
             <div key={link.platform} className="p-6 border border-gray-700/20 rounded-xl backdrop-blur-sm hover:border-gray-700/50 transition-colors duration-300 w-full flex justify-between items-center" onMouseOver={() => { setHoveredPlatform(link.platform) }} onMouseOut={() => { setHoveredPlatform(null) }}
               onClick={() => { 
-                if (link.platform === "Instagram" || link.platform === "Email") {
+                if (link.platform === "Instagram") {
                   window.open(link.link, '_blank')
                 } else {
                   copyToClipboard(link.handle);
