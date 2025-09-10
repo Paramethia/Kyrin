@@ -17,7 +17,7 @@ export default function About() {
            <div className="p-6 border border-gray-700/20 rounded-xl backdrop-blur-sm hover:border-gray-700/50 transition-colors duration-300">
             <h2 className="text-2xl font-semibold mb-2">Me</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              I am 21 years old from Durban in South Africa. I've always been interested in technology and how things work as they do. When it comes to video games, I'm a huge fan of God of War, minecraft, COD and some other games. I code, do voices, listen to music and a few other things. My favorite artist is XXXTENTACION.
+              I am 21 years old from Free State, South Africa. I've always been interested in technology and how things work as they do. When it comes to video games, I'm a huge fan of God of War, minecraft, COD and some other games. I code, do voices, listen to music and a few other things. My favorite artist is XXXTENTACION.
             </p>
           </div>
           <div className="p-6 border border-gray-700/20 rounded-xl backdrop-blur-sm hover:border-gray-700/50 transition-colors duration-300">
