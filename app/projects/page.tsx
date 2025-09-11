@@ -12,11 +12,18 @@ const PROJECTS = [
   },
   {
     title: 'Particles & creatures',
-    description: 'A JS practice project to learn about canvas drawing with JS (the background effect you see right now) and integrating a bunch of creatures with the particles. Not fit for mobile yet.',
+    description: 'A JS practice project to learn about canvas drawing with JS (the background effect you see right now) and integrating a bunch of creatures with the particles. Not functional for mobile yet.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://github.com/Paramethia/particles-and-creatures',
     site: 'https://particles-and-creatures.vercel.app'
   },
+  {
+    title: 'Yougra',
+    description: "Download YouTube content as audio or video straight to your device by only using the video's URL",
+    tech: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'ExpressJS'],
+    link: 'https://github.com/Paramethia/Yougra', 
+    site: 'https://yougra.vercel.app'
+  }
 ];
 
 export default function Projects() {
