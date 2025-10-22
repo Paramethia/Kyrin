@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex justify-center items-center h-full">
       <div className="text-center md:text-start space-y-6 max-w-2xl relative mx-4 md:mx-0">
-        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-4xl font-bold">
+        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-4xl text-gray-700 dark:text-gray-100 font-bold">
           Name's Kyrin
         </motion.h1>
 
@@ -48,8 +48,8 @@ export default function Home() {
                 <img className="w-4 h-4 group-hover:w-6 group-hover:h-6 transition-all duration-300" src={`/assets/${ICONS.find(icon => icon.name === skill)?.path}`} alt={skill} width={20} height={20} />
               </div>
               <div className="text-left">
-                <div className="text-white text-sm">{skill}</div>
-                <div className="text-xs text-gray-400 break-words w-[200px]">{EXPERIENCE.find(s => s.name === skill)?.experience || ''}</div>
+                <div className="text-gray-600 dark:text-white text-sm">{skill}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 break-words w-[200px]">{EXPERIENCE.find(s => s.name === skill)?.experience || ''}</div>
               </div>
             </motion.div>
           ))}

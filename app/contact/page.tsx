@@ -45,7 +45,7 @@ export default function Contact() {
           </motion.div>
         )}
         
-        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-5xl font-bold">
+        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-5xl text-gray-700 dark:text-gray-100 font-bold">
           Contact
         </motion.h1>
 
@@ -65,11 +65,11 @@ export default function Contact() {
               }}
             >
               <div className="flex items-center gap-4">
-                <svg className={`w-6 h-6 ${ hoveredPlatform === link.platform ? "text-gray-700" : "text-gray-300"}`} viewBox={`${link.platform === 'WhatsApp' ? "0 0 17 17" : "0 0 24 24"}`} width="24" height="24" fill="currentColor">
+                <svg className={`w-6 h-6 ${ hoveredPlatform === link.platform ? "text-gray-700" : "text-gray-300 dark:text-gray-200"}`} viewBox={`${link.platform === 'WhatsApp' ? "0 0 17 17" : "0 0 24 24"}`} width="24" height="24" fill="currentColor">
                   <path d={link.icon} />
                 </svg>
                 <div className="text-left">
-                  <h2 className={`text-xl ${ hoveredPlatform === link.platform ? "text-gray-700" : ""} font-semibold`}>{link.platform}</h2>
+                  <h2 className={`text-xl ${ hoveredPlatform === link.platform ? "text-gray-700" : "text-gray-500 dark:text-gray-200"} font-semibold`}>{link.platform}</h2>
                   <p className="text-gray-600 dark:text-gray-400">{link.handle}</p>
                 </div>
               </div>

@@ -8,7 +8,7 @@ const PROJECTS = [
     description: "A website I did as practice to learn how to work with databases in a more complex way using mongoDB. It's an invite system type of website using invite links.",
     tech: ['ReactJS', 'Tailwind CSS', "JavaScript", 'NodeJS', 'MongoDB'],
     link: 'https://github.com/paramethia/invicon',
-    site: 'https://invicon.lol'
+    site: 'https://invicon0.vercel.app'
   },
   {
     title: 'Particles & creatures',
@@ -87,7 +87,7 @@ export default function Projects() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex justify-center items-center h-full" onWheel={handleScroll} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className="text-center md:text-start space-y-6 max-w-2xl relative mx-4 md:mx-0">
-        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-5xl font-bold">
+        <motion.h1 initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="text-5xl text-gray-700 dark:text-gray-100 font-bold">
           Projects
         </motion.h1>
 
@@ -121,12 +121,12 @@ export default function Projects() {
 
         <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className="space-y-6">
           <motion.div key={PROJECTS[activeIndex].title} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="p-6 border border-gray-700/20 rounded-xl backdrop-blur-sm hover:border-gray-600/50 transition-colors duration-300">
-            <h2 className="text-2xl font-semibold mb-2">{PROJECTS[activeIndex].title}</h2>
+            <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-2">{PROJECTS[activeIndex].title}</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">{PROJECTS[activeIndex].description}</p>
             
             <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
               {PROJECTS[activeIndex].tech.map(tech => (
-                <span key={tech} className="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-600 dark:text-gray-400">
+                <span key={tech} className="px-3 py-1 bg-gray-400 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-400">
                   {tech}
                 </span>
               ))}
