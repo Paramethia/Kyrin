@@ -8,7 +8,7 @@ const PROJECTS = [
     description: "A website I did as practice to learn how to work with databases in a more complex way using mongoDB. It's an invite system type of website using invite links.",
     tech: ['ReactJS', 'Tailwind CSS', "JavaScript", 'NodeJS', 'MongoDB'],
     link: 'https://github.com/paramethia/invicon',
-    site: 'https://invicon0.vercel.app'
+    site: 'https://invicon.netlify.app'
   },
   {
     title: 'Particles & creatures',
