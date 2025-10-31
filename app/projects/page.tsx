@@ -22,7 +22,7 @@ const PROJECTS = [
     description: "Download YouTube content as audio or video straight to your device by only using the video's URL",
     tech: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'ExpressJS'],
     link: 'https://github.com/Paramethia/Yougra', 
-    site: 'https://yougra.vercel.app'
+    site: 'https://yougra.site'
   }
 ];
 
