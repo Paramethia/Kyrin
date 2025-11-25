@@ -5,43 +5,43 @@ import "./globals.css";
 import ClientLayout from "./components/ClientLayout";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Kyrin",
-  description: "This is a website I made for myself that tells you a little about me.",
+	title: "Kyrin",
+	description: "This is a website I made for myself that tells you a little about me.",
 };
 
 export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover",
-  userScalable: false
+	width: "device-width",
+	initialScale: 1,
+	viewportFit: "cover",
+	userScalable: false
 }
 
 export default function RootLayout({
-  children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
+	children,
+}: Readonly<{
+	children: React.ReactNode;
+}>) {
 
-  return (
-    <html lang="en">
-      <head>
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <Analytics />
-          <ClientLayout>{children}</ClientLayout>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<head>
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+			</head>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				<Analytics />
+				<ClientLayout>{children}</ClientLayout>
+			</body>
+		</html>
+	);
 }
 

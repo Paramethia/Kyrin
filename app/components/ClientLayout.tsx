@@ -6,7 +6,6 @@ import { Globalize } from "./Globalize";
 import Sidebar from "./Sidebar";
 import MobileNav from "./MobileNav";
 import Particles from "./Particles";
-// import Canvas from "./components/Canvas";
 import PageTransition from "./PageTransition";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
