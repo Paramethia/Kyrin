@@ -32,8 +32,8 @@ const b_experience = [
 ]
 
 export default function Home() {
-	let [expT, setExpT] = useState<string>('Front-end');
-	let [fExp, setFexp] = useState<boolean>(true);
+	const [expT, setExpT] = useState<string>('Front-end');
+	const [fExp, setFexp] = useState<boolean>(true);
 	
 	function experienceType() {
 		setFexp(!fExp);
