@@ -44,7 +44,7 @@ export default function Projects() {
 					setActiveIndex(prev => (prev + 1) % PROJECTS.length);
 					setProgress(0);
 				}
-			}, 100); // Update progress every 100ms for smoothness
+			}, 100);
 			return () => clearInterval(interval);
 		}
 	}, [isHovered, progress, lastUpdateTime]);
